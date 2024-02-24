@@ -1,0 +1,183 @@
+/* SWAPIComponent.css */
+
+/* Container styles */
+.swapi-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Planets grid container */
+  .planet-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Title styles */
+  .title {
+    font-size: 32px;
+    color: #FFD700; /* Yellow */
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Planet card styles */
+  .planet-card {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .planet-card.active {
+    transform: translateY(-10px);
+  }
+  
+  .planet-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .planet-card p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .planet-card button {
+    background-color: #FFD700; /* Yellow */
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .planet-card button:hover {
+    background-color: #C3A008; /* Darker yellow */
+  }
+  
+  /* Planet residents styles */
+  .planet-residents {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .planet-residents h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .planet-residents ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .planet-residents li {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .planet-residents button {
+    background-color: #FFD700; /* Yellow */
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .planet-residents button:hover {
+    background-color: #C3A008; /* Darker yellow */
+  }
+  
+  /* Loading and error styles */
+  .loading,
+  .error {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  /* Responsive styles */
+  @media only screen and (max-width: 600px) {
+    .planet-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 10px;
+    }
+  
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .planet-card {
+      padding: 15px;
+    }
+  
+    .planet-card h2 {
+      font-size: 20px;
+    }
+  
+    .planet-card p {
+      font-size: 16px;
+    }
+  
+    .planet-card button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  
+    .planet-residents {
+      padding: 15px;
+      margin-top: 15px;
+    }
+  
+    .planet-residents h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .planet-residents li {
+      font-size: 16px;
+    }
+  
+    .pagination button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+  /* SWAPIComponent.css */
+
+/* Pagination styles */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+
+.pagination button {
+  background-color: #FFD700; /* Yellow */
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #C3A008; /* Darker yellow */
+}
